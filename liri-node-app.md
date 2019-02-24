@@ -17,3 +17,7 @@ Axios is used to send requests to the Bands in Town and OMBD APIs to retrieve th
 APIs:
    * [OMDB API](http://www.omdbapi.com)
    * [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
+
+
+   Inline-style:
+   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_default.png "LIRI OMBD - No movie entered")
