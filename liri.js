@@ -59,10 +59,13 @@ function bandsInTown(artist) {
 }
 
 function getMovie(movieName) {
+  if (movieName === undefined) {
+    movieName = "Mr. Nobody"; //default Movie
+  }
   axios.get("https://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy")
     .then(function(response) {
       console.log(response.data.Ratings);
-      console.log('==============SONG INFO==============');
+      console.log('==============MOVIE INFO==============');
       console.log('Movie Title: ' + response.data.Title);
       console.log('Year of Release: ' + response.data.Year);
       console.log('IMDB Rating: ' + response.data.imdbRating);
@@ -83,28 +86,14 @@ var doWhatItSays = function() {
   fs.readFile('random.txt', 'utf8', function(err, data) {
 
     var arr = data.split(",");
-    var command = arr[0];
-    //var input = arr[1].split('"').join('');
+    //console.log(arr[0]);
+    //console.log(arr[1]);
 
-    //console.log(data);
-    //console.log(arr);
-    console.log(command);
-    //console.log(input);
+    mySpotify(arr[1]);
 
     if (err) throw err;
-
-    if (command === "concert-this") {
-      bandsInTown();
-    }
-    if (command === "spotify-this-song") {
-      mySpotify();
-    }
-    if (command === "movie-this") {
-      getMovie();
-    }
-
-  });
-}
+    })
+  }
 
 var pick = function(caseData, functionData) {
   switch (caseData) {
