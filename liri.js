@@ -6,6 +6,8 @@ var axios = require("axios");
 var moment = require('moment'); //formats the time
 var fs = require("fs"); //built in node function that can read files
 var spotify = new Spotify(keys.spotify);
+var firstParm = process.argv[2];
+var secondParm = process.argv[3];
 
 var getArtistNames = function(artist) {
   return artist.name;
@@ -52,7 +54,7 @@ function bandsInTown(artist) {
         console.log('==============CONCERT INFO==============');
         console.log('Venue Name: ' + response.data[i].venue.name);
         console.log('Venue Location: ' + response.data[i].venue.city + ", " + response.data[i].venue.country);
-        console.log('Date of the Event: ' + moment(response.data[i].datetime).format("MM/DD/YYYY")); //dateArr[0] should be the date separated from the time
+        console.log('Date of the Event: ' + moment(response.data[i].datetime).format("MM/DD/YYYY")); //moment npm packaged used here
         console.log('========================================');
       }
     })
@@ -84,17 +86,17 @@ function getMovie(movieName) {
     });
 }
 
-var doWhatItSays = function() {
+function doWhatItSays() {
 
-  fs.readFile('random.txt', 'utf8', function(err, data) {
-    var arr = data.split(",");
-    //console.log(arr[0]);
-    //console.log(arr[1]);
-    mySpotify(arr[1]);
+  fs.readFile("random.txt", "utf8", function(error, data) {
+    if (error) return;
 
-    if (err) throw err;
-    })
-  }
+    firstParm = data.split(",")[0].trim();
+    secondParm = data.split(",")[1].trim();
+
+    pick(firstParm, secondParm);
+  });
+}
 
 var pick = function(caseData, functionData) {
   switch (caseData) {

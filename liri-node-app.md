@@ -25,18 +25,23 @@ APIs:
    OMDB Example - No movie added by user.:
    ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_default.png "LIRI OMDB - No movie entered")
    OMDB Example - With movie added by user.:
-   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_with_user_input.png "LIRI OMDB - No movie entered")
+   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_with_user_input.png "LIRI OMDB - With movie entered")
 
 ### SPOTIFY
 
-  OMDB Example - No movie added by user.:
-  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_default.png "LIRI OMDB - No movie entered")
-  OMDB Example - With movie added by user.:
-  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_with_user_input.png "LIRI OMDB - No movie entered")
+  Spotify Example - No song added by user.:
+  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_spotify_default.png "LIRI Spotify - No song entered")
+  Spotify Example - With song added by user.:
+  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_concerts_with_user_input.png "LIRI Spotify - With song entered")
 
 ### BANDS IN TOWN
 
-   OMDB Example - No movie added by user.:
-   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_default.png "LIRI OMDB - No movie entered")
-   OMDB Example - With movie added by user.:
-   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_with_user_input.png "LIRI OMDB - No movie entered")
+   Bands in Town Example - No band added by user.:
+   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_concerts_default.png "LIRI Bands in Town - No band entered")
+   Bands in Town Example - With band added by user.:
+   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_concerts_with_user_input.png "LIRI Bands in Town - With band entered")
+
+### DO WHAT IT SAYS
+
+  Do What It Says Example - Utilized the ramdom.txt file. This file contains the following information: spotify-this-song, "I Want it That Way". This tells the console to run the 'spotify-this-song' function.
+  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_doWhatItSays.png "LIRI Do What It Says - reads random.txt file")
