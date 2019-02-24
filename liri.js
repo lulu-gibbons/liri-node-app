@@ -42,6 +42,9 @@ var mySpotify = function(songInput) {
 }
 
 function bandsInTown(artist) {
+  if (artist === undefined) {
+    artist = "Ty Segall"; //default band
+  }
   axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
     .then(function(response) {
       //console.log(response.data);
@@ -50,7 +53,7 @@ function bandsInTown(artist) {
         console.log('Venue Name: ' + response.data[i].venue.name);
         console.log('Venue Location: ' + response.data[i].venue.city + ", " + response.data[i].venue.country);
         console.log('Date of the Event: ' + moment(response.data[i].datetime).format("MM/DD/YYYY")); //dateArr[0] should be the date separated from the time
-        console.log('=====================================');
+        console.log('========================================');
       }
     })
     .catch(function(error) {
@@ -84,11 +87,9 @@ function getMovie(movieName) {
 var doWhatItSays = function() {
 
   fs.readFile('random.txt', 'utf8', function(err, data) {
-
     var arr = data.split(",");
     //console.log(arr[0]);
     //console.log(arr[1]);
-
     mySpotify(arr[1]);
 
     if (err) throw err;
