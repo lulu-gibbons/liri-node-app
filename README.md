@@ -44,8 +44,8 @@ APIs:
 ### DO WHAT IT SAYS
 
   Do What It Says Spotify Example - Utilized the random.txt file to grab parameter information from Spotify.
-  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_doWhatItSays.png "LIRI Do What It Says - reads random.txt file")
+  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_doWhatItSays_with_song.png "LIRI Do What It Says - reads song from random.txt file")
   Do What It Says Movie Example - Utilized the random.txt file to grab parameter information from OMDB.
-  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_doWhatItSays.png "LIRI Do What It Says - reads random.txt file")
+  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_doWhatItSays_with_movie.png "LIRI Do What It Says - reads movie from random.txt file")
   Do What It Says Concert Example - Utilized the random.txt file to grab parameter information from Bands in Town.
-  * This is currently throwing an error so no screenshot if available yet. Bands in Town works correctly when not using the random.txt file. 
+  * This is currently throwing an error so no screenshot if available yet. Bands in Town works correctly when not using the random.txt file.
