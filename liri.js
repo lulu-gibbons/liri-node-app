@@ -47,11 +47,12 @@ function bandsInTown(artist) {
   if (artist === undefined) {
     artist = "Ty Segall"; //default band
   }
-  axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
+  axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp") //uses axios to retrieve info from API
     .then(function(response) {
       //console.log(response.data);
       for (var i = 0; i < response.data.length; i++) {
         console.log('==============CONCERT INFO==============');
+        console.log('Lineup: ' + response.data[i].lineup);
         console.log('Venue Name: ' + response.data[i].venue.name);
         console.log('Venue Location: ' + response.data[i].venue.city + ", " + response.data[i].venue.country);
         console.log('Date of the Event: ' + moment(response.data[i].datetime).format("MM/DD/YYYY")); //moment npm packaged used here
@@ -67,7 +68,7 @@ function getMovie(movieName) {
   if (movieName === undefined) {
     movieName = "Mr. Nobody"; //default Movie
   }
-  axios.get("https://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy")
+  axios.get("https://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy") //uses axios to retrieve info from API
     .then(function(response) {
       console.log(response.data.Ratings);
       console.log('==============MOVIE INFO==============');

@@ -22,30 +22,30 @@ APIs:
 
 ### OMDB
 
-   OMDB Example - No movie added by user.:
+   OMDB Example - No movie added by user:
    ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_default.png "LIRI OMDB - No movie entered")
-   OMDB Example - With movie added by user.:
+   OMDB Example - With movie added by user:
    ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_movie_with_user_input.png "LIRI OMDB - With movie entered")
 
 ### SPOTIFY
 
-  Spotify Example - No song added by user.:
+  Spotify Example - No song added by user:
   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_spotify_default.png "LIRI Spotify - No song entered")
-  Spotify Example - With song added by user.:
-  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_concerts_with_user_input.png "LIRI Spotify - With song entered")
+  Spotify Example - With song added by user:
+  ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_spotify_with_user_input.png "LIRI Spotify - With song entered")
 
 ### BANDS IN TOWN
 
-   Bands in Town Example - No band added by user.:
+   Bands in Town Example - No band added by user:
    ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_concerts_default.png "LIRI Bands in Town - No band entered")
-   Bands in Town Example - With band added by user.:
+   Bands in Town Example - With band added by user:
    ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_concerts_with_user_input.png "LIRI Bands in Town - With band entered")
 
 ### DO WHAT IT SAYS
 
-  Do What It Says Spotify Example - Utilized the random.txt file to grab parameter information from Spotify.
+  Do What It Says Spotify Example - Utilized the random.txt file to grab parameter information from Spotify:
   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_doWhatItSays_with_song.png "LIRI Do What It Says - reads song from random.txt file")
-  Do What It Says Movie Example - Utilized the random.txt file to grab parameter information from OMDB.
+  Do What It Says Movie Example - Utilized the random.txt file to grab parameter information from OMDB:
   ![alt text](https://github.com/lulu-gibbons/liri-node-app/blob/master/LIRI_SS/LIRI_doWhatItSays_with_movie.png "LIRI Do What It Says - reads movie from random.txt file")
-  Do What It Says Concert Example - Utilized the random.txt file to grab parameter information from Bands in Town.
+  Do What It Says Concert Example - Utilized the random.txt file to grab parameter information from Bands in Town:
   * This is currently throwing an error so no screenshot if available yet. Bands in Town works correctly when not using the random.txt file.
